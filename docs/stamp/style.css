@@ -1,0 +1,33 @@
+/* styles.css */
+.stamp-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.stamp {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: scale(3) rotate(45deg);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.stamp.active {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+}

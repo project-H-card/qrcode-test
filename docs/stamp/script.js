@@ -1,0 +1,1 @@
+document.getElementById('stamp').classList.add('active');
