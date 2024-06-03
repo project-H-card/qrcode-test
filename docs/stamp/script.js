@@ -1,1 +1,3 @@
-document.getElementById('stamp').classList.add('active');
+window.onload = () => {
+    document.getElementById('stamp').classList.add('active');
+}
