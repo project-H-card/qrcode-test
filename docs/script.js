@@ -23,6 +23,7 @@ function scanQRCode() {
 
         if (code && code.data.startsWith('http')) {
             window.location.href = code.data;
+            return;
         }
     }
     requestAnimationFrame(scanQRCode);
